@@ -26,4 +26,12 @@ describe('Tail', () => {
         expect(tail([3,4,5,-6])).toEqual([4,5,-6])
     });
 
+    it('Tail of Array [3,4,5,-6] with start index 2 is [5,-6]', () => {
+        expect(tail([3,4,5,-6],2)).toEqual([5,-6])
+    });
+
+    it('Tail of Array [3,4,5,-6] with start index 0 is [3,4,5,-6]', () => {
+           expect(tail([3,4,5,-6],0)).toEqual([3,4,5,-6])
+    });
+
 })
