@@ -1,6 +1,8 @@
+const isArrayDefined = require('./isArrayDefined')
+
 const head = (array) => {
 
-    if(typeof array != "undefined" && array != null && array.length != 0)
+    if(isArrayDefined(array))
         return array[0];
 
     return undefined;
